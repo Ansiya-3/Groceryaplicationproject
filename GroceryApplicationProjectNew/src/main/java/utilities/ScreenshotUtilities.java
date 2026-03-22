@@ -23,10 +23,7 @@ public class ScreenshotUtilities {
 	  
 	 			f1.mkdirs(); 
 	 		} 
-	 		String destination = System.getProperty("user.dir") + "//outputScreenShot//" + failedTestCase + timeStamp 
-	 				+ ".png"; 
-	 		// String destination = f1.getPath() + "//" + failedTestCase + timeStamp + 
-	 		// ".png"; 
+	 		String destination = f1.getPath() +"//" + failedTestCase + timeStamp + ".png";	 		
 	  
 	 		File finalDestination = new File(destination); 
 	 		FileHandler.copy(screenShot, finalDestination); 
